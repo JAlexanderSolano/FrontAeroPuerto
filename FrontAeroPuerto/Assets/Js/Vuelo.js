@@ -20,7 +20,7 @@ function RegistrarVuelo() {
 
     $.ajax({
         url: 'https://localhost:10978/api/RegistroVuelo/RegistrarVuelo',
-        method: 'POST',
+        type: 'POST',
         dataType: 'json',
         contentType: 'application/json',
         data: {

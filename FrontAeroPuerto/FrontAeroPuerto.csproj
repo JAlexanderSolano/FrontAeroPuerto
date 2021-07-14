@@ -795,6 +795,7 @@
     <Content Include="Assets\jquery-ui-1.10.4.custom\jquery-ui-1.10.4.custom\js\jquery-ui-1.10.4.custom.js" />
     <Content Include="Assets\jquery-ui-1.10.4.custom\jquery-ui-1.10.4.custom\js\jquery-ui-1.10.4.custom.min.js" />
     <Content Include="Assets\Js\FuncionesGlobales.js" />
+    <Content Include="Assets\Js\InformeVuelos.js" />
     <Content Include="Assets\Js\Vuelo.js" />
     <Content Include="Pages\RegistroVuelo.aspx" />
     <Content Include="Pages\VerificacionVuelos.aspx" />
