@@ -31,7 +31,7 @@
     <title></title>
 </head>
 <body>
-    <div class="container">
+    <div class="container" style="overflow: auto !important;">
         <form>
             <div class="mb-3">
                 <h1 class="h1 text-center">Registro vuelo</h1>
@@ -73,7 +73,7 @@
                 <input type="text" class="form-control" id="txtTiempoAtencion" />
             </div>
             <div class="d-flex justify-content-center" onclick="RegistrarVuelo()">
-                <button type="button" class="btn btn-success">Acceder</button>
+                <button type="button" class="btn btn-success">Registrar vuelo</button>
             </div>
         </form>
     </div>

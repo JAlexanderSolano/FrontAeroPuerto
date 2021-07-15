@@ -5,14 +5,22 @@
 function cargarLista() {
     $("#grid").empty();
     var $grid = $("#grid");
-    var $tr = $("<tr></tr>");
+    var encabezado = $("<tr></tr>");
+    encabezado.append("<td>  Fecha de salida </td>");
+    encabezado.append("<td>  Hora de vuelo </td>");
+    encabezado.append("<td>  Número de vuelo </td>");
+    encabezado.append("<td>  Aerolinea </td>");
+    encabezado.append("<td>  Encargado </td>");
+    encabezado.append("<td>  Tiempo de atencion </td>");
+
+    $grid.append(encabezado);
     $.ajax({
-        url: 'http://localhost:10978/api/InformacionVuelos/InformaconVuelo',
+        url: 'http://localhost:10978/api/informacionvuelos/informaconvuelo',
         type: 'GET',
-        crossDomain: true,
-        dataType: 'jsonp',
         success: function (data) {
+            
             $.each(data, function (idx, item) {
+                var $tr = $("<tr></tr>");
                 $tr.append("<td>" + item.fechaSalida + "</td>");
                 $tr.append("<td>" + item.horaVuelo + "</td>");
                 $tr.append("<td>" + item.numeroVuelo + "</td>");
@@ -24,8 +32,10 @@ function cargarLista() {
                 $grid.append($tr);
             });
         },
-        error: function (request, msg, error) {
-            alert("error");
-        }
+        
     });
+
+  
+
+
 }
